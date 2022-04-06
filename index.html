@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="app">
+        <div id="canvas">
+            <div id="primary-number">{{firstNum}}</div>
+            <div id="add">+</div>
+            <div id="secondary-number">{{secondNum}}</div>
+            <div id="equal">=</div>
+            <div>
+                <input v-model="res" type="number" id="guess">
+            </div>
+            <div>
+                <button @click="getRes" id="btn">check</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+</body>
+</html>
